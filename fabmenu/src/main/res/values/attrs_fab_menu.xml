@@ -1,0 +1,8 @@
+<resources>
+    <declare-styleable name="FabMenu">
+        <attr name="space" format="dimension"/>
+        <attr name="fabBackgroundColor" format="color"/>
+        <attr name="expandIcon" format="reference"/>
+        <attr name="collapseIcon" format="reference"/>
+    </declare-styleable>
+</resources>
