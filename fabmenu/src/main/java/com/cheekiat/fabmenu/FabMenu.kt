@@ -121,10 +121,6 @@ class FabMenu : FrameLayout {
                 return@setOnClickListener
             }
 
-
-
-            updateMainIcon()
-
             if (!isShow) {
 
                 showMenu()
@@ -137,7 +133,7 @@ class FabMenu : FrameLayout {
 
     fun initMenu() {
 
-        updateMainIcon()
+        root.mainFab.setImageDrawable(expandIcon)
 
         var itemSize = resources.getDimensionPixelSize(com.google.android.material.R.dimen.design_fab_size_mini);
 
@@ -198,6 +194,7 @@ class FabMenu : FrameLayout {
 
     fun hideMenu() {
         isShow = false
+        root.mainFab.setImageDrawable(expandIcon)
         var animatorSet = AnimatorSet()
         var animationBuilder: AnimatorSet.Builder? = null
         for (i in 0 until arrayItems.size) {
@@ -243,6 +240,7 @@ class FabMenu : FrameLayout {
 
     fun showMenu() {
         isShow = true
+        root.mainFab.setImageDrawable(collapseIcon)
 
         var animatorSet = AnimatorSet()
         var animationBuilder: AnimatorSet.Builder? = null
@@ -307,20 +305,4 @@ class FabMenu : FrameLayout {
         return root.mainFab
     }
 
-    fun updateMainIcon() {
-        if (isShow) {
-            root.mainFab.setImageDrawable(expandIcon)
-        } else {
-            root.mainFab.setImageDrawable(collapseIcon)
-        }
-    }
-
-
-//    override fun onMeasure(widthMeasureSpec: Int, heightMeasureSpec: Int) {
-//
-//        val contentHeight = height - paddingTop - paddingBottom
-//        super.onMeasure(widthMeasureSpec, heightMeasureSpec)
-//
-//        setMeasuredDimension(2000,2000)
-//    }
 }

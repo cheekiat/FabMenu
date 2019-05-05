@@ -36,14 +36,16 @@
     <com.cheekiat.fabmenu.FabMenu
             android:id="@+id/fabMenu"
             android:layout_width="wrap_content"
-            app:collapseIcon="@drawable/ic_add_white_24dp"
-            app:expandIcon="@drawable/ic_close_white_24dp"
+            app:collapseIcon="@drawable/ic_close_white_24dp"
+            app:expandIcon="@drawable/ic_add_white_24dp"
             app:space="16dp"
             app:fabBackgroundColor="#ff00ff"
             android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
-            android:layout_height="match_parent" android:layout_marginEnd="16dp"
-            app:layout_constraintEnd_toEndOf="parent" android:layout_marginBottom="16dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="16dp"
             app:layout_constraintBottom_toBottomOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
