@@ -10,7 +10,7 @@ ScreenShot
 ----------------
 ![ScreenShot](https://github.com/cheekiat/FabMenu/blob/master/appscreenshort.gif)
 
-Java Code
+Kotlin Code
 ----------------
         fabMenu.addItem(R.drawable.ic_add_a_photo_black_24dp, android.R.color.holo_orange_light)
         fabMenu.addItem(R.drawable.ic_call_black_24dp, android.R.color.holo_orange_light)
