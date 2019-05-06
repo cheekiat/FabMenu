@@ -39,7 +39,7 @@ Xml Code
         
 How to use?
 ----------------
-### Java
+### Kotlin
 | Public methods | Description |
 | ------------- | ------------- |
 | addItem(resId: Int, backgroundColor: Int) | Add sub menu button. |
