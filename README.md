@@ -62,6 +62,6 @@ repositories {
 }
 
 dependencies {
- implementation 'com.cheekiat:fabmenu:1.0'
+ implementation 'com.cheekiat:fabmenu:1.1'
 }
 ```
